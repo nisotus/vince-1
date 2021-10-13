@@ -13,7 +13,7 @@ pipeline {
                         }
                         stage('Three'){
                                 when{
-                                        allOf {
+                                        not {
                                                 branch "master"
                                         }
                                 }
@@ -43,5 +43,4 @@ pipeline {
                                 }
 }
 }                        
-}
 }
